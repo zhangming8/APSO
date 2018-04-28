@@ -1,7 +1,7 @@
 % An implementation of PSO in: 
 % "Alireza. A., PSO with adaptive mutation and inertia weight and its application in parameter estimation of dynamic systems,
 % Acta Automatica, vol. 37, no. 5, pp. 541-549, 2011."
-% Operating environment: HP Z640 (20 cores), windows 7, matlab 2014  --by MingZhang 2018.4.20 
+% Operating environment: HP Z640 (20 cores), windows 7, matlab 2014   --by MingZhang 2018.4.20 
 tic;clc;close all;clear all
 global M 
 global initial_flag
