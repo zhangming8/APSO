@@ -22,7 +22,7 @@ for i=1:20  %i=1:20, it is the function number.
     D=Xrange(func_num,3); % dimension
     iter_max=10000*D; % iteration
     result1=zeros(runs,iter_max);
-    disp function£º,i
+    disp function:,i
         for j=1:runs
 %         parfor j=1:runs
             disp runs:,j
