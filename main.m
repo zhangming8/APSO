@@ -7,7 +7,7 @@ global M
 global initial_flag
 load Xrange % In Xrang, the first and second column are the range of the particle position, the last column is dimension
 
-core_num = 20; %Parallel computing, the number of cpu core. if core_num<0 means don't use parallel computing
+core_num = 2; %Parallel computing, the number of cpu core. if core_num<0 means don't use parallel computing
                 %if set core_num>0, please change "for" into "parfor" in line 26
 pop_size = 20; % pop size
 runs = 30; % the run times independently
@@ -23,8 +23,8 @@ for i=1:20  %i=1:20, it is the function number.
     iter_max=10000*D; % iteration
     result1=zeros(runs,iter_max);
     disp function:,i
-        for j=1:runs
-%         parfor j=1:runs
+%         for j=1:runs
+        parfor j=1:runs
             disp runs:,j
             creatematrix(D); %Generate orthogonal matrix M, will be used in f16-f20
             initial_flag=0;
